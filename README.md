@@ -118,6 +118,8 @@ To reproduce the `neuMARCO` retrieval experiments using ColBERT-XM, you need to 
 
 To reproduce the `neuCLIR` retrieval experiments you can use the `xm-retrievers` fork and just change the `DATA` variable of `xm-retrievers/scripts/run_multi_vector_biencoder.sh` to "neuclir". (Check the `xm-retrievers` repository for more usage details.)
 
+To evaluate the results you can use the `score_neuclir.py` script.
+
 ## Fine-tuning the models
 
 First requirement for BGE-M3 and mT5 fine-tuning is to create a jsonl file of the training data + mined negatives. For reproducibility you can find our traning jsonl files in the released dataset (see Checkpoints and Dataset on Hugging Face 🤗 Section).
