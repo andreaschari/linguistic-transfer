@@ -32,15 +32,18 @@ approach can transfer across language families, where we observe mixed
 results, which opens doors for future research.
 
 ## Setup
+The instructions here are focused on setting up a conda environment.
 
-This code was developed and tested with Python 3.10. First you should create a virtual environment (instructions here for `conda`):
+This code was developed and tested with Python 3.10. 
+
+First you should create a virtual environment and load the dependencies in the `requirements.txt` file.
 
 ```bash
-conda create -n lt python=3.10
+conda create -n lt --file requirements.txt
 conda activate lt
 ```
 
-To run the retrieval and re-ranking experiments for BM25, BGE-M3 and mT5, you will need to install the following dependencies to run `variations_experiments.py`:
+To run the retrieval and re-ranking experiments for BM25, BGE-M3 and mT5, you will need to install the following dependencies to run `variations_experiments.py` (The pyterrier dependencies are included in the `requirements.txt` file):
 
 - [pyterrier](https://pyterrier.readthedocs.io/)
 - [pyterrier_xlang](https://github.com/seanmacavaney/pyterrier_xlang)
