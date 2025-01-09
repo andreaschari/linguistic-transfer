@@ -118,7 +118,7 @@ To reproduce the `neuMARCO` retrieval experiments using ColBERT-XM, you need to 
 
 To reproduce the `neuCLIR` retrieval experiments you can use the `xm-retrievers` fork and just change the `DATA` variable of `xm-retrievers/scripts/run_multi_vector_biencoder.sh` to "neuclir". (Check the `xm-retrievers` repository for more usage details.)
 
-To evaluate the results you can use the `score_neuclir.py` script.
+To evaluate the results you can use the `score_neuclir.py` script. You will need to download [some mapping files](https://huggingface.co/datasets/andreaschari/neuclir-mappings) to map the ColBERT-XM rankings to the original neuCLIR document ids.
 
 ## Fine-tuning the models
 

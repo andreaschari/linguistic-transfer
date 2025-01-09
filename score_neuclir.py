@@ -30,7 +30,7 @@ logging.info(f"Loading rankings from {ranking_file}")
 rankings = pd.read_csv(ranking_file, sep='\t', header=None, names=['qid', 'docno', 'rank', 'score'])
 
 # rankings have the index of the document collection as "doc_id", we need to map it to the original doc_id
-# mapping files are found in the huggingface dataset (Check repo docs)
+# mapping files are found in huggingface (Link in docs)
 
 # load the mapping file
 logging.info(f"Loading mapping from {mapping_file}")
