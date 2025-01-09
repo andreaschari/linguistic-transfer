@@ -145,8 +145,8 @@ The translated data used in the paper are available [here](https://huggingface.c
 |-------------|-------------------------------------------------------------------------------|
 | BGE-M3 (Catalan-French)   | [Download](https://huggingface.co/andreaschari/bge-m3-lt-cafr)|
 | BGE-M3 (Afrikaans-Dutch)  | [Download](https://huggingface.co/andreaschari/bge-m3-lt-afnl)|
-| mT5 (Catalan-French)        | [Download](https://huggingface.co/andreaschari/mt5-base-lt-cafr)|
-| mT5 (Afrikaans-Dutch)       | [Download](https://huggingface.co/andreaschari/mt5-base-lt-afnl)|
+| mT5 (Catalan-French)        | [Download](https://huggingface.co/andreaschari/mt5-unicamp-lt-cafr)|
+| mT5 (Afrikaans-Dutch)       | [Download](https://huggingface.co/andreaschari/mt5-unicamp-lt-afnl)|
 | ColBERT-XM (Catalan-French) | [Download](https://huggingface.co/andreaschari/colbert-xm-lt-cafr)|
 | ColBERT-XM (Afrikaans-Dutch) | [Download](https://huggingface.co/andreaschari/colbert-xm-lt-afnl)|
 
