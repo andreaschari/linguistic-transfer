@@ -144,11 +144,11 @@ The translated data used in the paper are available [here](https://huggingface.c
 | Model       | Hugging Face URL                                                                 |
 |-------------|-------------------------------------------------------------------------------|
 | BGE-M3 (Catalan-French)   | [Download](https://huggingface.co/andreaschari/bge-m3-lt-cafr)|
-| BGE-M3 (Afrikaans-Dutch)  | [Download](https://huggingface.co/andreaschari/bge-m3-lt-afnl)|
+| BGE-M3 (Afrikaans-Dutch)  | [Download](https://huggingface.co/andreaschari/bge-m3-lt-afdt)|
 | mT5 (Catalan-French)        | [Download](https://huggingface.co/andreaschari/mt5-unicamp-lt-cafr)|
-| mT5 (Afrikaans-Dutch)       | [Download](https://huggingface.co/andreaschari/mt5-unicamp-lt-afnl)|
+| mT5 (Afrikaans-Dutch)       | [Download](https://huggingface.co/andreaschari/mt5-unicamp-lt-afdt)|
 | ColBERT-XM (Catalan-French) | [Download](https://huggingface.co/andreaschari/colbert-xm-lt-cafr)|
-| ColBERT-XM (Afrikaans-Dutch) | [Download](https://huggingface.co/andreaschari/colbert-xm-lt-afnl)|
+| ColBERT-XM (Afrikaans-Dutch) | [Download](https://huggingface.co/andreaschari/colbert-xm-lt-afdt)|
 
 ## Citation
 
