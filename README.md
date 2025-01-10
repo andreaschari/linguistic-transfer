@@ -94,9 +94,19 @@ This will use the BGE-M3 (Catalan-French) model and run retrieval experiments on
 
 To run the neuMARCO and neuCLIR retrieval experiments, you can use the `neuclir_neumarco_retrieval.py` and the `neuclir_neumarco_mt5.py` script for BGE-M3 and mT5, respectively.
 
+Example usage:
+
+```python
+python neuclir_neumarco_retrieval.py ---dataset neuclir/1/fa --index path/to/original_bgem3/index --trans_index /path/to/index/of/finetuned_bgem3/index --model bge-m3-lt-cafr --out_path /path/to/save/retrieval/res
+```
+
+```python
+python neuclir_neumarco_mt5.py ---dataset neuclir/1/fa --first_stage /path/to/first_stage/results --model mt5-base-lt-cafr --out_path /path/to/save/retrieval/res
+```
+
 ### ColBERT-XM
 
-To run the experiments, you can use the `run_multi_vector_biencoder.sh` script from the `xm-retrievers` repo. (Check the `xm-retrievers` repository for more usage details.)
+To run the experiments, you can use the `run_multi_vector_biencoder.sh` script from the `xm-retrievers` repo. (Check the `xm-retrievers` repository for usage details.)
 
 #### mMARCO
 
@@ -147,6 +157,7 @@ To finetune ColBERT-XM you can use the `run_multi_vector_biencoder.sh` script fr
 More detailed instructions for BGE-M3 retrieval can be found in the `pyterrier-dr` [documentation](https://github.com/terrierteam/pyterrier_dr) under the `BGE-M3 Encoder` Section.
 
 The example below shows how to use one of the Linguistic Transfer variants of BGE-M3 for retrieval by changing the default `model_name` to one of the BGE-M3 models in the section below.
+
 ```python
 import pyterrier as pt
 from pyterrier_dr import BGEM3, FlexIndex
