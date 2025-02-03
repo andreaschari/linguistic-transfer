@@ -40,7 +40,7 @@ res = res.merge(topics, on="qid")
 
 logging.info("Loaded results from disk")
 
-pipeline = pt.text.get_text(dataset, "text")
+pipeline = pt.text.get_text(dataset, "text") >> reranker
 logging.info("Running reranking")
 res_reranked = pipeline(res)
 logging.info("Reranked results")
