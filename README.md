@@ -208,6 +208,17 @@ The translated data used in the paper are available [here](https://huggingface.c
 
 ## Citation
 
-WIP
-
-WIP
+```
+@InProceedings{10.1007/978-3-031-88717-8_22,
+author="Chari, Andreas
+and MacAvaney, Sean
+and Ounis, Iadh",
+title="Improving Low-Resource Retrieval Effectiveness Using Zero-Shot Linguistic Similarity Transfer",
+booktitle="Advances in Information Retrieval",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="290--306",
+isbn="978-3-031-88717-8"
+}
+```
