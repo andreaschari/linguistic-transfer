@@ -144,7 +144,7 @@ You can use the `finetune_bgem3.sh` script to fine-tune the BGE-M3 model on the 
 
 ### mT5
 
-You can use the `finetune_mt5.py` script to fine-tune the mT5 model on the mMARCO dataset. A few paths in the script need to be changed to match your setup, such as `MODEL_SAVE_PATH` and `QUERIES_PATH`.
+You can use the `finetune_mt5.py` script to fine-tune the mT5 model on the mMARCO dataset.
 
 ### ColBERT-XM
 

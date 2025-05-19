@@ -1,3 +1,4 @@
+import argparse
 import ir_datasets
 import pandas as pd
 import torch
@@ -13,20 +14,24 @@ _logger = ir_datasets.log.easy()
 torch.cuda.empty_cache()
 torch.manual_seed(0)
 
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description="Fine-tune mT5 model")
+parser.add_argument("--model_save_path", type=str, required=True, help="Path to save the trained model")
+parser.add_argument("--queries_path", type=str, required=True, help="Path to the translated queries file")
+parser.add_argument("--training_dataset", type=str, required=True, help="dataset to train on (IRDS format)", default="mmarco/v2/dt/train")
+args = parser.parse_args()
+
 # SETUP
 BATCH_SIZE = 4
 MAX_EPOCHS = 1
 LEARNING_RATE = 5e-12
-## change the path below to your configuration
-MODEL_SAVE_PATH = '/root/nfs/CLIR/data/models/mt5-unicamp-tdt-5e-12'
+MODEL_SAVE_PATH = args.model_save_path
+QUERIES_PATH = args.queries_path
+dataset = args.training_dataset
 OUTPUTS = ['yes', 'no']
 
 
 def iter_train_samples():
-  ## change the path below to your configuration
-  QUERIES_PATH = '/root/nfs/CLIR/data/mmarco.v2.dt_af.train.judged.tsv'
-  ## change the dataset to the one you want to use
-  dataset = ir_datasets.load('mmarco/v2/dt/train')
   docs = dataset.docs_store()
   # Load translated queries
   translated_queries_df = pd.read_csv(f'{QUERIES_PATH}', sep='\t', names=['qid', 'query'], on_bad_lines="skip")
